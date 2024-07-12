@@ -1,0 +1,177 @@
+:root {
+    --bg-color-light: #EDF0F4;
+    --bg-color-dark: #474C53;
+    --bg-color-dark-2: #2C2D2F;
+}
+
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'Arial', sans-serif; /* 使用现代化的字体 */
+    line-height: 1.6;
+    background-color: var(--bg-color-light);
+    margin: 0;
+    padding: 0;
+    color: #495057; /* 主体文本颜色 */
+}
+
+a {
+    color: #3785cf;
+    text-decoration: none;
+    text-underline-offset: 3px;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 800px; /* 设置容器最大宽度 */
+    margin: 0 auto; /* 居中显示容器 */
+    padding: 20px; /* 添加内边距 */
+}
+
+header {
+    background-color: #343a40; /* 深灰色背景 */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffc107; /* 橙色 */
+}
+
+.profile {
+    margin-top: 20px;
+    text-align: center; /* 个人简介内容居中 */
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #ffc107; /* 橙色边框 */
+    display: block;
+    margin: 0 auto 20px; /* 图片居中显示 */
+}
+
+.profile h1 {
+    font-size: 32px; /* 增大标题字体 */
+    margin-bottom: 10px; /* 减少标题底部间距 */
+}
+
+.profile p {
+    font-size: 18px; /* 段落字体大小 */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.content {
+    background: rgba(255,255,255,0.20);
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    text-align: left：0; /* 内容区域的文本左对齐 */
+}
+
+.content h1 {
+    font-size: 36px; /* 增大标题字体 */
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px; /* 段落字体大小 */
+    line-height: 1.8;
+    color: #6c757d; /* 段落文本颜色 */
+    margin-bottom: 20px;
+}
+
+/*.content a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}*/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    white-space: nowrap;
+    color: white;
+    background-color: #687079;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+    
+    header nav ul li {
+        margin-right: 10px;
+    }
+    
+    .profile img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .profile h1 {
+        font-size: 28px; /* 在小屏幕上稍减字体大小 */
+    }
+    
+    .profile p {
+        font-size: 16px; /* 在小屏幕上稍减字体大小 */
+    }
+    
+    .content {
+        padding: 20px;
+    }
+    
+    .content h1 {
+        font-size: 30px; /* 在小屏幕上稍减字体大小 */
+    }
+    
+    .content p {
+        font-size: 16px; /* 在小屏幕上稍减字体大小 */
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    /* 深色模式样式 */
+
+    
+}
