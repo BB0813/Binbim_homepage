@@ -7,7 +7,7 @@
 > **联系方式**
 >> 个人主页: `https://bb0813.github.io/Binbim_homepage/`
 >> 官网: `https://zuotiya.com/`
->> 邮箱: `binbim@friend.bdxy.cc`
+>> 邮箱: `huangbinqi@firefun.cn`
 >> QQ 群组: `619925543`
 >> Telegram 频道: `@binbimasia`
 >> GitHub: `https://github.com/BB0813`
