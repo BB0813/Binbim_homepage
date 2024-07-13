@@ -2,10 +2,10 @@
 ## 这是 **Binbim** 的个人主页，本人正在自学编写 html, css, js
 ## 后续将会逐步增加功能以及新项目 求各位给个 Star
 
-### 预览网址: `http://home.binbim.club/`
+### 预览网址: `https://bb0813.github.io/Binbim_homepage/`
 
 > **联系方式**
->> 个人主页: `http://home.binbim.asia/`
+>> 个人主页: `https://bb0813.github.io/Binbim_homepage/`
 >> 官网: `https://zuotiya.com/`
 >> 邮箱: `binbim@friend.bdxy.cc`
 >> QQ 群组: `619925543`
