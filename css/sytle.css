@@ -1,10 +1,11 @@
 :root {
-    --bg-color-light: #EDF0F4;
-    --bg-color-dark: #474C53;
-    --bg-color-dark-2: #2C2D2F;
+    /* 根元素变量定义 */
+    --bg-color-light: #EDF0F4;   /* 浅背景颜色 */
+    --bg-color-dark: #474C53;    /* 深背景颜色 */
+    --bg-color-dark-2: #2C2D2F;  /* 更深的背景颜色 */
 }
 
-/* Reset some basic styles */
+/* 重置一些基本样式 */
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +15,7 @@
 body {
     font-family: 'Roboto', 'Arial', sans-serif; /* 使用现代化的字体 */
     line-height: 1.6;
-    background: var(--bg-color-light);
+    background-color: var(--bg-color-light); /* 设置背景颜色 */
     margin: 0;
     padding: 0;
     color: #495057; /* 主体文本颜色 */
@@ -23,12 +24,12 @@ body {
 a {
     color: #3785cf;
     text-decoration: none;
-    text-underline-offset: 3px;
+    text-underline-offset: 3px; /* 链接下划线偏移 */
 }
 
 a:hover {
     color: black;
-    text-decoration: underline;
+    text-decoration: underline; /* 鼠标悬停链接下划线 */
 }
 
 .container {
@@ -38,148 +39,130 @@ a:hover {
 }
 
 header {
-    background: #343a40; /* 深灰色背景 */
-    color: #fff;
+    background-color: #343a40; /* 头部背景颜色 */
+    color: #fff; /* 头部文本颜色 */
     padding: 20px 0;
-    text-align: center;
+    text-align: center; /* 文本居中对齐 */
 }
 
 header nav ul {
-    list-style-type: none;
+    list-style-type: none; /* 清除列表样式 */
     margin-top: 10px;
 }
 
 header nav ul li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 20px; /* 导航项右边距 */
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #fff; /* 导航链接颜色 */
     text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
+    font-size: 18px; /* 导航链接字体大小 */
+    transition: color 0.3s ease; /* 颜色过渡效果 */
 }
 
 header nav ul li a:hover {
-    color: #ffc107; /* 橙色 */
+    color: #ffc107; /* 悬停时链接颜色 */
 }
 
 .profile {
-    margin-top: 20px;
-    text-align: center; /* 个人简介内容居中 */
+    margin-top: 20px; /* 个人简介上边距 */
+    text-align: center; /* 个人简介文本居中对齐 */
 }
 
 .profile img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid #ffc107; /* 橙色边框 */
-    display: block;
-    margin: 0 auto 20px; /* 图片居中显示 */
+    width: 150px; /* 头像宽度 */
+    height: 150px; /* 头像高度 */
+    border-radius: 50%; /* 头像圆角 */
+    border: 3px solid #ffc107; /* 头像边框 */
+    display: block; /* 块级元素显示 */
+    margin: 0 auto 20px; /* 头像居中显示 */
 }
 
 .profile h1 {
-    font-size: 32px; /* 增大标题字体 */
-    margin-bottom: 10px; /* 减少标题底部间距 */
+    font-size: 32px; /* 标题字体大小 */
+    margin-bottom: 10px; /* 标题底部边距 */
 }
 
 .profile p {
     font-size: 18px; /* 段落字体大小 */
-    line-height: 1.6;
-    margin-bottom: 20px;
+    line-height: 1.6; /* 段落行高 */
+    margin-bottom: 20px; /* 段落底部边距 */
 }
 
 .content {
-    background: rgba(255,255,255,0.20);
-    padding: 30px;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    text-align: left：0; /* 内容区域的文本左对齐 */
+    background: rgba(255,255,255,0.20); /* 内容区半透明白色背景 */
+    padding: 30px; /* 内容区内边距 */
+    margin-top: 20px; /* 内容区顶部边距 */
+    border-radius: 8px; /* 内容区圆角 */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    text-align: left; /* 内容文本左对齐 */
 }
 
 .content h1 {
-    font-size: 36px; /* 增大标题字体 */
-    margin-bottom: 20px;
+    font-size: 36px; /* 标题字体大小 */
+    margin-bottom: 20px; /* 标题底部边距 */
 }
 
 .content p {
     font-size: 18px; /* 段落字体大小 */
-    line-height: 1.8;
+    line-height: 1.8; /* 段落行高 */
     color: #6c757d; /* 段落文本颜色 */
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* 段落底部边距 */
 }
 
-/*.content a {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.content a:hover {
-    text-decoration: underline;
-}*/
-
+/* footer 样式 */
 footer {
-    position: fixed;
+    position: fixed; /* 固定在页面底部 */
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 60px;
-    line-height: 25px;
-    padding: 5px 0;
-    white-space: nowrap;
-    color: #ccc;
-    /*
-        浅色主题背景用 #EDF0F4
-        深色主题背景用 #474C53
-        浅色背景灰色用 grey
-        深色背景灰色用 #ccc
-    */
-    background: #687079;
-    font-size: 14px;
-    text-align: center;
+    height: 30px; /* footer高度 */
+    line-height: 30px; /* footer行高 */
+    white-space: nowrap; /* 不换行 */
+    color: white; /* 文本颜色 */
+    background-color: #687079; /* footer背景颜色 */
+    text-align: center; /* 文本居中对齐 */
 }
 
-
 @media only screen and (max-width: 768px) {
+    /* 小屏幕设备下的样式调整 */
     header {
-        padding: 10px 0;
+        padding: 10px 0; /* 头部内边距调整 */
     }
     
     header nav ul li {
-        margin-right: 10px;
+        margin-right: 10px; /* 导航项右边距调整 */
     }
     
     .profile img {
-        width: 120px;
-        height: 120px;
+        width: 120px; /* 头像宽度调整 */
+        height: 120px; /* 头像高度调整 */
     }
     
     .profile h1 {
-        font-size: 28px; /* 在小屏幕上稍减字体大小 */
+        font-size: 28px; /* 标题字体大小调整 */
     }
     
     .profile p {
-        font-size: 16px; /* 在小屏幕上稍减字体大小 */
+        font-size: 16px; /* 段落字体大小调整 */
     }
     
     .content {
-        padding: 20px;
+        padding: 20px; /* 内容区内边距调整 */
     }
     
     .content h1 {
-        font-size: 30px; /* 在小屏幕上稍减字体大小 */
+        font-size: 30px; /* 标题字体大小调整 */
     }
     
     .content p {
-        font-size: 16px; /* 在小屏幕上稍减字体大小 */
+        font-size: 16px; /* 段落字体大小调整 */
     }
 }
 
 @media (prefers-color-scheme: dark) {
-    /* 深色模式样式 */
-
-    
+    /* 深色模式下的样式 */
+    /* 这里可以定义暗色主题的样式 */
 }
