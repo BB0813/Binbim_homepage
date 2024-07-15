@@ -6,28 +6,29 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+    <!-- 设置文档编码格式 -->
     <meta charset="utf-8">
-    <!-- 引入外部的 JavaScript 文件 -->
-    <script defer src="//webviso.yestool.org/js/index.min.js"></script>
-    <!-- 设置 viewport 以支持响应式布局 -->
+    <!-- 设置视口 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <!-- 禁用页面缓存 -->
     <meta http-equiv="cache-control" content="max-age=0, no-store">
     <meta http-equiv="pragma" content="no-cache">
-    <!-- 页面作者信息 -->
+    <!-- 作者信息 -->
     <meta name="author" content="Binbim">
-    <!-- 页面版权信息 -->
+    <!-- 版权信息 -->
     <meta name="copyright" content="Binbim">
-    <!-- 页面的站点名称 -->
+    <!-- 站点名称 -->
     <meta name="sitename" content="Binbim 的个人主页">
-    <!-- 页面描述 -->
+    <!-- 站点描述 -->
     <meta name="description" content="我是 Binbim ，欢迎访问我的个人主页。">
-    <!-- 页面关键词 -->
+    <!-- SEO 搜索关键词 -->
     <meta name="keywords" content="Binbim,Binbim的个人主页,广西科技商贸高级技工学校,做题鸭,做题鸭网络,做题鸭科技,做题鸭网络科技工作室">
     <!-- 页面标题 -->
     <title>Binbim 的个人主页</title>
-    <!-- 引入自定义的样式表 -->
+    <!-- 引入外部 CSS 样式表 -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- 引入外部 JS 脚本 -->
+    <script defer src="//webviso.yestool.org/js/index.min.js"></script>
 </head>
 
 <body>
@@ -72,6 +73,7 @@
                 <img src="images/avatar.jpg" alt="Profile Picture">
                 <h1>I'm Binbim</h1>
                 <p>我的个人主页</p>
+                <span id="clock">时间加载中...</span>
             </div>
         </header>
 
@@ -103,10 +105,10 @@
                 </p>
             </section>
 
-            <!-- 友情链接部分 -->
+            <!-- 友情链接 -->
             <section friends>
                 <h2>友情链接</h2>
-                <!-- 友情链接说明 -->
+                <!-- 友情链接申请方式 -->
                 <p>交换友情链接请联系邮箱 <a href="mailto:binbim@friend.bdxy.cc">binbim@friend.bdxy.cc</a></p>
                 <!-- 外部链接 -->
                 <p><a href="https://zuotiya.com/" target="_blank">做题鸭网络科技工作室</a></p>
@@ -117,50 +119,77 @@
             </section>
         </div>
 
-        <!-- 页脚部分 -->
+        <!-- 页脚 -->
         <footer>
             <!-- 版权信息 -->
-            <span>&copy; Binbim 保留所有权利 版本号V1.1.4</span>
+            <span>&copy; Binbim 保留所有权利 | 版本号 V1.2.1</span>
             <br>
             <!-- 访问统计 -->
-            本页访问人次:<span id="page_pv"></span>本页访问人数:<span id="page_uv"></span>
+            访问人次: <span id="page_pv"></span> 访问人数: <span id="page_uv"></span>
         </footer>
-
-        <!-- 前往外部站点提示 -->
-        <script>
-            document.addEventListener('DOMContentLoaded', e => {
-                // 监听所有友情链接的点击事件
-                document.querySelectorAll('[friends] a').forEach(el => {
-                    el.addEventListener('click', e1 => {
-                        // 提示用户即将离开当前站点
-                        let result = confirm(`即将前往外部站点 \`${el.innerText}\`，请注意您的财产安全等。
-    网址：${el.href}
-
-    请确认是否前往。`);
-                        
-                        return result;
-                    });
-                });
-            });
-        </script>
-
-        <!-- 插入外部链接图标 -->
-        <script>
-            const EXT_LINK_SVG_ICON = '<svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="12" height="12" size="12"><path d="M3 2C2.44772 2 2 2.44772 2 3V12C2 12.5523 2.44772 13 3 13H12C12.5523 13 13 12.5523 13 12V8.5C13 8.22386 12.7761 8 12.5 8C12.2239 8 12 8.22386 12 8.5V12H3V3L6.5 3C6.77614 3 7 2.77614 7 2.5C7 2.22386 6.77614 2 6.5 2H3ZM12.8536 2.14645C12.9015 2.19439 12.9377 2.24964 12.9621 2.30861C12.9861 2.36669 12.9996 2.4303 13 2.497L13 2.5V2.50049V5.5C13 5.77614 12.7761 6 12.5 6C12.2239 6 12 5.77614 12 5.5V3.70711L6.85355 8.85355C6.65829 9.04882 6.34171 9.04882 6.14645 8.85355C5.95118 8.65829 5.95118 8.34171 6.14645 8.14645L11.2929 3H9.5C9.22386 3 9 2.77614 9 2.5C9 2.22386 9.22386 2 9.5 2H12.4999H12.5C12.5678 2 12.6324 2.01349 12.6914 2.03794C12.7504 2.06234 12.8056 2.09851 12.8536 2.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>';
-            
-            document.addEventListener('DOMContentLoaded', e => {
-                document.querySelectorAll('a').forEach(el => {
-                    el.innerHTML += EXT_LINK_SVG_ICON;
-                });
-            });
-        </script>
     </div>
+    
+    <!-- 前往外部站点提示 -->
+    <script async>
+        document.addEventListener('DOMContentLoaded', e => {
+            // 监听所有友情链接的点击事件
+            document.querySelectorAll('[friends] a').forEach(el => {
+                el.addEventListener('click', e1 => {
+                    // 提示用户即将离开当前站点
+                    let result = confirm(`即将前往外部站点 \`${el.innerText}\`，请注意您的财产安全等。
+网址：${el.href}
+
+请确认是否前往。`);
+                    
+                    if (!result)
+                        e1.preventDefault();
+                    
+                    return result;
+                });
+            });
+        });
+    </script>
+
+    <!-- 插入外部链接图标 -->
+    <script async>
+        const EXT_LINK_SVG_ICON = '<svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="12" height="12" size="12"><path d="M3 2C2.44772 2 2 2.44772 2 3V12C2 12.5523 2.44772 13 3 13H12C12.5523 13 13 12.5523 13 12V8.5C13 8.22386 12.7761 8 12.5 8C12.2239 8 12 8.22386 12 8.5V12H3V3L6.5 3C6.77614 3 7 2.77614 7 2.5C7 2.22386 6.77614 2 6.5 2H3ZM12.8536 2.14645C12.9015 2.19439 12.9377 2.24964 12.9621 2.30861C12.9861 2.36669 12.9996 2.4303 13 2.497L13 2.5V2.50049V5.5C13 5.77614 12.7761 6 12.5 6C12.2239 6 12 5.77614 12 5.5V3.70711L6.85355 8.85355C6.65829 9.04882 6.34171 9.04882 6.14645 8.85355C5.95118 8.65829 5.95118 8.34171 6.14645 8.14645L11.2929 3H9.5C9.22386 3 9 2.77614 9 2.5C9 2.22386 9.22386 2 9.5 2H12.4999H12.5C12.5678 2 12.6324 2.01349 12.6914 2.03794C12.7504 2.06234 12.8056 2.09851 12.8536 2.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>';
+
+        document.addEventListener('DOMContentLoaded', e => {
+            document.querySelectorAll('a').forEach(el => {
+                el.innerHTML += EXT_LINK_SVG_ICON;
+            });
+        });
+    </script>
+    
+    <script async>
+        function start()
+        {
+            let elClock = document.getElementById('clock');
+            setInterval(() => {
+                elClock.innerHTML = new Date().toLocaleString();
+            }, 100);
+        }
+        
+        function starter()
+        {
+            try
+            {
+                start();
+            }
+            catch (error)
+            {
+                starter();
+            }
+        }
+        
+        starter();
+    </script>
 
     <script src="https://binbim.beidouxingyi.cn/js" async></script>
 </body>
 </html>
 
 
-<!-- 版本号 V.1.1.4 -->
- <!-- 添加了更多代码注释 -->
+<!-- 版本号 V.1.2.1 -->
+ <!-- 添加了实时时间显示 -->
   <!-- &copy; Binbim 保留所有权利 -->
