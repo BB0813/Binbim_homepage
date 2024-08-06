@@ -12,13 +12,12 @@
 >> Telegram 频道: `@binbimasia`
 >> GitHub: `https://github.com/BB0813`
 
-### **北斗星移** 提供技术支持 。
-> **北斗星移网运营团队**
->> 官网: `https://www.beidouxingyi.cn/`
->> 邮箱: `beidou@bdxy.cc`
->> QQ 群组: `926696254`
->> Telegram 频道: `@bdxy01`
->> GitHub: `https://github.com/beidouxingyi`
+### **做题鸭网络科技工作室** 提供技术支持 。
+> **做题鸭网络科技工作室**
+>> 官网: `https://zuotiya.com/`
+>> 邮箱: `ztywl@firefun.cn`
+>> QQ 群组: `966187388`
+>> GitHub: `https://github.com/xdj2009823`
 
 ### **Binbim** 现就职于 **做题鸭网络科技工作室** 。
 > **做题鸭网络科技工作室**
@@ -62,5 +61,8 @@
 ### 版本号V.1.2.3
 * 删除部分网址和个人简介内容
 
+## 2024.8.6
+### 版本号V.1.2.4
+* 删除部分网址
 
 ### Copyright Binbim 保留所有权利
