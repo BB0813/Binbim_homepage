@@ -17,14 +17,14 @@
 >> 官网: `https://zuotiya.com/`
 >> 邮箱: `ztywl@firefun.cn`
 >> QQ 群组: `966187388`
->> GitHub: `https://github.com/xdj2009823`
+>> GitHub: `https://github.com/Do-the-question-duck-network`
 
 ### **Binbim** 现就职于 **做题鸭网络科技工作室** 。
 > **做题鸭网络科技工作室**
 >> 官网: `https://zuotiya.com/`
 >> 邮箱: `ztywl@firefun.cn`
 >> QQ 群组: `712895267`
->> GitHub: `https://github.com/xdj2009823`
+>> GitHub: `https://github.com/Do-the-question-duck-network`
 
 # 开发版本号
 ## 2024.7.11 
