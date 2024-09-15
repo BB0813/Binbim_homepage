@@ -140,6 +140,7 @@ header .profile p {
     background: rgba(255,255,255,0.20); /* 内容区半透明白色背景 */
     padding: 30px; /* 内容区内边距 */
     margin-top: 20px; /* 内容区顶部边距 */
+    margin-bottom: 80px; /* 添加底部边距，给页脚预留空间 */
     border-radius: 8px; /* 内容区圆角 */
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
     text-align: center; /* 使内容区文本居中 */
