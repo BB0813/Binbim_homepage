@@ -239,3 +239,22 @@ footer {
 }
 /* 版本号V.1.3.3 */
 /* &copy; Binbim 保留所有权利 */
+
+/* 以下是针对小屏幕设备的样式调整 */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px 5px; /* 减小内边距 */
+    }
+    
+    header nav ul li {
+        margin-right: 8px; /* 减小右边距 */
+    }
+
+    header .profile h1 {
+        font-size: 24px; /* 减小标题大小 */
+    }
+
+    header .profile p {
+        font-size: 14px; /* 减小段落字体大小 */
+    }
+}
