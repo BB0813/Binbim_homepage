@@ -1,0 +1,261 @@
+:root {
+    /* 根元素变量定义 */
+    --bg-color-light: #EDF0F4;   /* 浅背景颜色 */
+    --bg-color-dark: #474C53;    /* 深背景颜色 */
+    --bg-color-dark-2: #2C2D2F;  /* 更深的背景颜色 */
+}
+
+/* 重置一些基本样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* 主体样式设置 */
+    font-family: 'Roboto', 'Arial', sans-serif; /* 使用现代化的字体 */
+    line-height: 1.6;
+    background-color: var(--bg-color-light); /* 设置背景颜色 */
+    margin: 0;
+    padding: 0;
+    color: #495057; /* 主体文本颜色 */
+    overflow: hidden;
+    text-align: center; /* 使整个页面的文本居中 */
+}
+
+#container {
+    /* 主容器样式 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 60px);
+    overflow: auto;
+}
+
+a {
+    /* 链接样式 */
+    color: #3785cf;
+    text-decoration: none;
+    text-underline-offset: 3px; /* 链接下划线偏移 */
+}
+
+a:hover {
+    /* 链接悬停效果 */
+    color: black;
+    text-decoration: underline; /* 鼠标悬停链接下划线 */
+}
+
+.container {
+    /* 容器样式 */
+    max-width: 800px; /* 设置容器最大宽度 */
+    margin: 0 auto; /* 居中显示容器 */
+    padding: 20px; /* 添加内边距 */
+}
+
+header {
+    /* 头部样式 */
+    background-image:
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* 添加半透明黑色遮罩层 */
+            url('https://ooo.0x0.ooo/2024/08/23/OtHv3B.jpg'); /* 背景图片 */
+    background-size: cover; /* 确保图片覆盖整个背景 */
+    background-repeat: no-repeat; /* 防止图片重复 */
+    background-attachment: fixed; /* 背景固定 */
+    backdrop-filter: blur(5px); /* 添加模糊效果 */
+    color: #fff; /* 头部文本颜色 */
+    padding: 20px 0;
+    text-align: center; /* 文本居中对齐 */
+}
+
+header nav ul {
+    /* 导航列表样式 */
+    list-style-type: none; /* 清除列表样式 */
+    margin-top: 10px;
+}
+
+header nav ul li {
+    /* 导航项样式 */
+    display: inline-block;
+    margin-right: 20px; /* 导航项右边距 */
+}
+
+header nav ul li a {
+    /* 导航链接样式 */
+    color: #fff; /* 导航链接颜色 */
+    text-decoration: none;
+    font-size: 18px; /* 导航链接字体大小 */
+    transition: color 0.3s ease; /* 颜色过渡效果 */
+}
+
+header nav ul li a:hover {
+    /* 导航链接悬停效果 */
+    color: #ffc107; /* 悬停时链接颜色 */
+}
+
+header .profile p {
+    /* 个人简介段落样式 */
+    margin-bottom: 10px;
+}
+
+#clock {
+    /* 时钟样式 */
+    color: #ccc;
+    font-size: 12px;
+    font-family: Consolas, Arial, sans-serif;
+    text-align: center; /* 使时钟文本居中 */
+}
+
+.profile {
+    /* 个人简介样式 */
+    margin-top: 20px; /* 个人简介上边距 */
+    text-align: center; /* 个人简介文本居中对齐 */
+}
+
+.profile img {
+    /* 头像样式 */
+    width: 150px; /* 头像宽度 */
+    height: 150px; /* 头像高度 */
+    border-radius: 50%; /* 头像圆角 */
+    border: 3px solid #ffc107; /* 头像边框 */
+    display: block; /* 块级元素显示 */
+    margin: 0 auto 20px; /* 头像居中显示 */
+}
+
+.profile h1 {
+    /* 个人简介标题样式 */
+    font-size: 32px; /* 标题字体大小 */
+    margin-bottom: 10px; /* 标题底部边距 */
+}
+
+.profile p {
+    /* 个人简介段落样式 */
+    font-size: 18px; /* 段落字体大小 */
+    line-height: 1.6; /* 段落行高 */
+    margin-bottom: 20px; /* 段落底部边距 */
+}
+
+.content {
+    /* 内容区样式 */
+    background: rgba(255,255,255,0.20); /* 内容区半透明白色背景 */
+    padding: 30px; /* 内容区内边距 */
+    margin-top: 20px; /* 内容区顶部边距 */
+    margin-bottom: 80px; /* 添加底部边距，给页脚预留空间 */
+    border-radius: 8px; /* 内容区圆角 */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    text-align: center; /* 使内容区文本居中 */
+}
+
+.content h1 {
+    /* 内容区标题样式 */
+    font-size: 36px; /* 标题字体大小 */
+    margin-bottom: 20px; /* 标题底部边距 */
+}
+
+.content p {
+    /* 内容区段落样式 */
+    font-size: 18px; /* 段落字体大小 */
+    line-height: 1.8; /* 段落行高 */
+    color: #6c757d; /* 段落文本颜色 */
+    margin-bottom: 20px; /* 段落底部边距 */
+}
+
+/* footer 样式 */
+footer {
+    /* 页脚样式 */
+    position: fixed; /* 固定在页面底部 */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    line-height: 20px;
+    padding: 5px 0;
+    white-space: nowrap;
+    /*
+        浅色主题背景用 #EDF0F4
+        深色主题背景用 #474C53
+        浅色背景灰色用 grey
+        深色背景灰色用 #ccc
+    */
+    background: #687079;
+    font-size: 12px;
+    text-align: center;
+    z-index: 1;
+    border-top: 2px solid white;
+    user-select: none;
+    box-shadow: 0 0 20px rgba(55, 99, 170, 0.075);
+    color: grey;
+    background: var(--bg-color-light);
+}
+
+@media only screen and (max-width: 768px) {
+    /* 小屏幕设备下的样式调整 */
+    header {
+        /* 头部内边距调整 */
+        padding: 10px 0; 
+    }
+    
+    header nav ul li {
+        /* 导航项右边距调整 */
+        margin-right: 10px; 
+    }
+    
+    .profile img {
+        /* 头像宽度调整 */
+        width: 120px; 
+        /* 头像高度调整 */
+        height: 120px; 
+    }
+    
+    .profile h1 {
+        /* 标题字体大小调整 */
+        font-size: 28px; 
+    }
+    
+    .profile p {
+        /* 段落字体大小调整 */
+        font-size: 16px; 
+    }
+    
+    .content {
+        /* 内容区内边距调整 */
+        padding: 20px; 
+    }
+    
+    .content h1 {
+        /* 标题字体大小调整 */
+        font-size: 30px; 
+    }
+    
+    .content p {
+        /* 段落字体大小调整 */
+        font-size: 16px; 
+    }
+}
+
+/* 以下是针对小屏幕设备的样式调整 */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px 5px; /* 减小内边距 */
+    }
+    
+    header nav ul li {
+        margin-right: 8px; /* 减小右边距 */
+    }
+
+    header .profile h1 {
+        font-size: 24px; /* 减小标题大小 */
+    }
+
+    header .profile p {
+        font-size: 14px; /* 减小段落字体大小 */
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    /* 深色模式下的样式 */
+    /* 这里可以定义暗色主题的样式 */
+}
+
+/* 版本号V.1.5.2 */
+/* &copy; Binbim 保留所有权利 */
