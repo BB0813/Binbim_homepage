@@ -13,18 +13,19 @@
 >> GitHub: `https://github.com/BB0813`
 
 ### **做题鸭网络科技工作室** 提供技术支持 。
-> **做题鸭网络科技工作室**
->> 官网: `https://zuotiya.com/`
->> 邮箱: `ztywl@firefun.cn`
->> QQ 群组: `966187388`
->> GitHub: `https://github.com/Do-the-question-duck-network`
+> **YB-Cloud网络科技团队**
+>> 官网: `https://ybcloud.binbim.club/`
+>> 邮箱: `暂无`
+>> QQ 群组: `619925543`
 
 ### **Binbim** 现就职于 **做题鸭网络科技工作室** 。
+### **做题鸭网络科技工作室** 提供技术支持 。
 > **做题鸭网络科技工作室**
 >> 官网: `https://zuotiya.com/`
 >> 邮箱: `ztywl@firefun.cn`
 >> QQ 群组: `712895267`
->> GitHub: `https://github.com/Do-the-question-duck-network`
+
+
 
 # 开发版本号
 ## 2024.7.11 
