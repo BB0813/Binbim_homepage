@@ -110,6 +110,7 @@ header .profile p {
     /* 个人简介样式 */
     margin-top: 20px; /* 个人简介上边距 */
     text-align: center; /* 个人简介文本居中对齐 */
+    transition: transform 0.3s ease; /* 初始的平滑过渡效果 */
 }
 
 .profile img {
@@ -137,13 +138,21 @@ header .profile p {
 
 .content {
     /* 内容区样式 */
-    background: rgba(255,255,255,0.20); /* 内容区半透明白色背景 */
+    background: rgba(255, 255, 255, 0.20); /* 内容区半透明白色背景 */
     padding: 30px; /* 内容区内边距 */
     margin-top: 20px; /* 内容区顶部边距 */
     margin-bottom: 80px; /* 添加底部边距，给页脚预留空间 */
     border-radius: 8px; /* 内容区圆角 */
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
     text-align: center; /* 使内容区文本居中 */
+    transition: transform 0.3s ease; /* 平滑过渡效果 */
+}
+
+/* 添加悬停效果，放大动效 */
+.profile:hover, 
+.content:hover {
+    transform: scale(1.05); /* 悬停时放大到原始大小的105% */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 悬停时添加阴影效果 */
 }
 
 .content h1 {
