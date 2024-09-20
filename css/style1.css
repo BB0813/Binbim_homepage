@@ -110,6 +110,7 @@ header .profile p {
     /* 个人简介样式 */
     margin-top: 20px; /* 个人简介上边距 */
     text-align: center; /* 个人简介文本居中对齐 */
+    transition: transform 0.3s ease; /* 初始的平滑过渡效果 */
 }
 
 .profile img {
@@ -135,15 +136,37 @@ header .profile p {
     margin-bottom: 20px; /* 段落底部边距 */
 }
 
+.profile {
+    /* 个人简介样式 */
+    margin-top: 20px; /* 个人简介上边距 */
+    text-align: center; /* 个人简介文本居中对齐 */
+    transition: transform 0.3s ease; /* 平滑过渡效果 */
+}
+
 .content {
     /* 内容区样式 */
-    background: rgba(255,255,255,0.20); /* 内容区半透明白色背景 */
+    background: rgba(255, 255, 255, 0.20); /* 内容区半透明白色背景 */
     padding: 30px; /* 内容区内边距 */
     margin-top: 20px; /* 内容区顶部边距 */
     margin-bottom: 80px; /* 添加底部边距，给页脚预留空间 */
     border-radius: 8px; /* 内容区圆角 */
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
     text-align: center; /* 使内容区文本居中 */
+    transition: transform 0.3s ease; /* 平滑过渡效果 */
+}
+
+/* 添加悬停效果，放大动效 */
+.profile:hover, 
+.content:hover {
+    transform: scale(1.03); /* 悬停时放大到原始大小的105% */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 添加悬停阴影效果 */
+}
+
+/* 添加悬停效果，放大动效 */
+.profile:hover, 
+.content:hover {
+    transform: scale(1.05); /* 悬停时放大到原始大小的105% */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 悬停时添加阴影效果 */
 }
 
 .content h1 {
@@ -160,9 +183,8 @@ header .profile p {
     margin-bottom: 20px; /* 段落底部边距 */
 }
 
-/* footer 样式 */
+/* 页脚样式 */
 footer {
-    /* 页脚样式 */
     position: fixed; /* 固定在页面底部 */
     bottom: 0;
     left: 0;
@@ -170,14 +192,7 @@ footer {
     height: 70px;
     line-height: 20px;
     padding: 5px 0;
-    white-space: nowrap;
-    /*
-        浅色主题背景用 #EDF0F4
-        深色主题背景用 #474C53
-        浅色背景灰色用 grey
-        深色背景灰色用 #ccc
-    */
-    background: #687079;
+    background: var(--bg-color-light);
     font-size: 12px;
     text-align: center;
     z-index: 1;
@@ -185,8 +200,8 @@ footer {
     user-select: none;
     box-shadow: 0 0 20px rgba(55, 99, 170, 0.075);
     color: grey;
-    background: var(--bg-color-light);
 }
+
 
 @media only screen and (max-width: 768px) {
     /* 小屏幕设备下的样式调整 */
@@ -257,5 +272,5 @@ footer {
     /* 这里可以定义暗色主题的样式 */
 }
 
-/* 版本号V1.5.4 */
+/* 版本号V1.6.1 */
 /* &copy; Binbim 保留所有权利 */
