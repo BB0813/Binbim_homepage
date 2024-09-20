@@ -1,10 +1,10 @@
 {
-  "name": "other-binbim",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "other-binbim",  // 包名称
+  "version": "1.0.0",  // 当前版本
+  "description": "",  // 描述信息
+  "main": "index.js",  // 主入口文件
+  "scripts": {  // 自定义脚本命令
+    "test": "echo \"Error: no test specified\" && exit 1"  // 测试命令
   },
-  "private": true
+  "private": true  // 私有标志，防止被发布到npm
 }
