@@ -1,7 +1,7 @@
 # Binbim's Personal_Homepage
 ## 这是 **Binbim** 的个人主页，本人正在自学编写 html, css, js
 ## 后续将会逐步增加功能以及新项目 求各位给个 Star
-
+## 本项目已增加 Apache-2.0 开源协议
 ### 预览网址: `https://bb0813.github.io/Binbim_homepage/`
 
 > **联系方式**
