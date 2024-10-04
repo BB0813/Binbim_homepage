@@ -57,16 +57,18 @@ a:hover {
 header {
     /* 头部样式 */
     background-image:
-            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* 添加半透明黑色遮罩层 */
-            url('https://ooo.0x0.ooo/2024/08/23/OtHv3B.jpg'); /* 背景图片 */
-    background-size: cover; /* 确保图片覆盖整个背景 */
-    background-repeat: no-repeat; /* 防止图片重复 */
-    background-attachment: fixed; /* 背景固定 */
-    backdrop-filter: blur(5px); /* 添加模糊效果 */
+            linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), /* 添加透明度，仅供视觉效果 */
+            url('https://ooo.0x0.ooo/2024/10/04/O49vk6.md.jpg'); /* 背景图片 */
+    background-size: cover; /* 背景图保持比例，覆盖整个header */
+    background-repeat: no-repeat; /* 不重复背景图 */
+    background-attachment: scroll; /* 背景图片随内容滚动（可选，若要固定则改为fixed） */
+    background-position: center 20%; /* 垂直位置下移，调整背景居中位置 */
     color: #fff; /* 头部文本颜色 */
-    padding: 20px 0;
+    padding: 20px 0; /* 上下内边距设置 */
     text-align: center; /* 文本居中对齐 */
 }
+
+
 
 header nav ul {
     /* 导航列表样式 */
@@ -272,5 +274,18 @@ footer {
     /* 这里可以定义暗色主题的样式 */
 }
 
-/* 版本号V1.6.4 */
+@media only screen and (max-width: 768px) {
+    header {
+        background-size: cover; /* 继续使用cover，保持一致性 */
+        background-position: center; /* 确保居中 */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        background-position: center; /* 移动设备上保持默认的位置 */
+    }
+}
+
+/* 版本号V1.6.5 */
 /* &copy; Binbim 保留所有权利 */
