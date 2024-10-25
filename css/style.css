@@ -58,7 +58,11 @@ header {
     /* 头部样式 */
     background-image:
             linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), /* 添加透明度，仅供视觉效果 */
+<<<<<<< Updated upstream
             url('https://ooo.0x0.ooo/2024/10/04/O49vk6.md.jpg'); /* 背景图片 */
+=======
+            url('https://ooo.0x0.ooo/2024/10/25/OD2XEB.png'); /* 背景图片 */
+>>>>>>> Stashed changes
     background-size: cover; /* 背景图保持比例，覆盖整个header */
     background-repeat: no-repeat; /* 不重复背景图 */
     background-attachment: scroll; /* 背景图片随内容滚动（可选，若要固定则改为fixed） */
@@ -138,13 +142,6 @@ header .profile p {
     margin-bottom: 20px; /* 段落底部边距 */
 }
 
-.profile {
-    /* 个人简介样式 */
-    margin-top: 20px; /* 个人简介上边距 */
-    text-align: center; /* 个人简介文本居中对齐 */
-    transition: transform 0.3s ease; /* 平滑过渡效果 */
-}
-
 .content {
     /* 内容区样式 */
     background: rgba(255, 255, 255, 0.20); /* 内容区半透明白色背景 */
@@ -160,15 +157,8 @@ header .profile p {
 /* 添加悬停效果，放大动效 */
 .profile:hover, 
 .content:hover {
-    transform: scale(1.03); /* 悬停时放大到原始大小的105% */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 添加悬停阴影效果 */
-}
-
-/* 添加悬停效果，放大动效 */
-.profile:hover, 
-.content:hover {
     transform: scale(1.05); /* 悬停时放大到原始大小的105% */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 悬停时添加阴影效果 */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 添加悬停阴影效果 */
 }
 
 .content h1 {
@@ -203,7 +193,6 @@ footer {
     box-shadow: 0 0 20px rgba(55, 99, 170, 0.075);
     color: grey;
 }
-
 
 @media only screen and (max-width: 768px) {
     /* 小屏幕设备下的样式调整 */
@@ -250,30 +239,24 @@ footer {
     }
 }
 
-/* 以下是针对小屏幕设备的样式调整 */
-@media only screen and (max-width: 768px) {
-    header {
-        padding: 10px 5px; /* 减小内边距 */
-    }
-    
-    header nav ul li {
-        margin-right: 8px; /* 减小右边距 */
-    }
 
-    header .profile h1 {
-        font-size: 24px; /* 减小标题大小 */
-    }
-
-    header .profile p {
-        font-size: 14px; /* 减小段落字体大小 */
-    }
+/* 成员简介区样式 */
+.team-introduction {
+    padding: 20px;
+    background-color: #f9f9f9; /* 背景颜色 */
+    border-radius: 8px; /* 圆角 */
+    margin: 20px 0; /* 上下外边距 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* 阴影效果 */
 }
 
-@media (prefers-color-scheme: dark) {
-    /* 深色模式下的样式 */
-    /* 这里可以定义暗色主题的样式 */
+.team-introduction h1 {
+    text-align: center;
+    color: #333; /* 标题颜色 */
+    font-size: 2em; /* 增大标题字体大小 */
+    margin-bottom: 20px; /* 标题底部间距 */
 }
 
+<<<<<<< Updated upstream
 @media only screen and (max-width: 768px) {
     header {
         background-size: cover; /* 继续使用cover，保持一致性 */
@@ -289,3 +272,57 @@ footer {
 
 /* 版本号V1.6.6 */
 /* &copy; Binbim 保留所有权利 */
+=======
+.member {
+    display: flex; /* 使用 flexbox 使成员信息横向排列 */
+    align-items: center; /* 垂直居中 */
+    margin: 15px 0; /* 每个成员的上下外边距 */
+    padding: 15px; /* 内边距 */
+    background-color: #ffffff; /* 成员背景颜色 */
+    border-radius: 10px; /* 圆角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+    transition: transform 0.3s, box-shadow 0.3s; /* 鼠标悬停时的动画效果 */
+}
+
+.member:hover {
+    transform: translateY(-4px); /* 向上移动以突出显示 */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 增强阴影效果 */
+}
+
+.member-img {
+    width: 80px; /* 图片宽度 */
+    height: 80px; /* 图片高度 */
+    border-radius: 50%; /* 圆形图片 */
+    margin-right: 20px; /* 图片与文本的间距 */
+    border: 2px solid #3785cf; /* 图片边框 */
+}
+
+.member h2 {
+    margin: 0; /* 去掉默认的上下外边距 */
+    font-size: 1.5em; /* 标题大小 */
+    color: #2c3e50; /* 成员姓名颜色 */
+}
+
+.member p {
+    margin: 5px 0; /* 去掉默认的外边距 */
+    color: #555; /* 文本颜色 */
+    font-size: 1em; /* 文本大小 */
+}
+
+/* 角色样式 */
+.member p:first-of-type {
+    font-weight: bold; /* 加粗角色 */
+    color: #3498db; /* 角色文本颜色 */
+}
+
+/* 简介的样式 */
+.member p:not(:first-of-type) {
+    font-style: italic; /* 斜体显示简介 */
+    color: #7f8c8d; /* 略淡的颜色，降低视觉冲击 */
+}
+
+
+
+/* 版本号V1.6.4 */
+/* &copy; Binbim 保留所有权利 */
+>>>>>>> Stashed changes
