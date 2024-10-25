@@ -1,8 +1,31 @@
-# XFast_Team-official
-## 这是 **XFast_Team** 的官方网站
+# Binbim's Personal_Homepage
+## 这是 **Binbim** 的个人主页，本人正在自学编写 html, css, js
 ## 后续将会逐步增加功能以及新项目 求各位给个 Star
 ## 本项目已增加 Apache-2.0 开源协议
-### 预览网址: `https://bb0813.github.io/XFast_Team-official/`
+### 预览网址: `https://bb0813.github.io/Binbim_homepage/`
+
+> **联系方式**
+>> 个人主页: `https://bb0813.github.io/Binbim_homepage/`
+>> 官网: `https://zuotiya.com/`
+>> 邮箱: `binbim@binbim.asia`
+>> QQ 群组: `619925543`
+>> Telegram 频道: `@binbimasia`
+>> GitHub: `https://github.com/BB0813`
+
+### **YB-Cloud网络科技团队** 为我本人创建的公益团队 **欢迎各位加入** 
+> **YB-Cloud网络科技团队**
+>> 官网: `https://ybcloud.binbim.club/`
+>> 邮箱: `暂无`
+>> QQ 群组: `619925543`
+
+### **Binbim** 现就职于 **做题鸭网络科技工作室** 
+### **做题鸭网络科技工作室** 提供技术支持 
+> **做题鸭网络科技工作室**
+>> 官网: `https://zuotiya.com/`
+>> 邮箱: `ztywl@firefun.cn`
+>> QQ 群组: `712895267`
+
+
 
 # 开发版本号
 ## 2024.7.11 
