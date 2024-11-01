@@ -58,7 +58,7 @@ header {
     /* 头部样式 */
     background-image:
             linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), /* 添加透明度，仅供视觉效果 */
-            url('https://ooo.0x0.ooo/2024/10/04/O49vk6.md.jpg'); /* 背景图片 */
+            url('https://ooo.0x0.ooo/2024/08/07/OtzfaM.jpg'); /* 背景图片 */
     background-size: cover; /* 背景图保持比例，覆盖整个header */
     background-repeat: no-repeat; /* 不重复背景图 */
     background-attachment: scroll; /* 背景图片随内容滚动（可选，若要固定则改为fixed） */
