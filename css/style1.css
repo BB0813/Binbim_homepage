@@ -286,6 +286,52 @@ footer {
         background-position: center; /* 移动设备上保持默认的位置 */
     }
 }
+/* 深色模式样式 */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--bg-color-dark); /* 深色背景 */
+        color: var(--text-color-dark); /* 深色文本 */
+    }
+
+    #container {
+        background-color: var(--bg-color-dark-2); /* 深色容器背景 */
+    }
+
+    a {
+        color: #61dafb; /* 深色模式下链接颜色 */
+    }
+
+    a:hover {
+        color: #fff; /* 悬停时链接颜色 */
+    }
+
+    footer {
+        background: var(--bg-color-dark); /* 深色页脚背景 */
+        color: #ccc; /* 深色页脚文本 */
+        border-top: 2px solid var(--bg-color-light); /* 页脚顶部边框 */
+    }
+    
+    .content {
+        background: rgba(0, 0, 0, 0.30); /* 内容区深色背景 */
+        color: #EAEAEA; /* 内容区文本颜色 */
+    }
+    
+    .profile h1,
+    .profile p,
+    .content h1,
+    .content p {
+        color: #EAEAEA; /* 深色模式下标题和段落颜色 */
+    }
+
+    .team-introduction {
+        background-color: #333; /* 深色模式背景 */
+        color: #fff; /* 深色模式文本颜色 */
+    }
+    
+    .team-introduction h1 {
+        color: #EAEAEA; /* 深色模式标题颜色 */
+    }
+}
 
 /* 版本号V1.6.6 */
 /* &copy; Binbim 保留所有权利 */
